@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="relative w-full h-20 bg-white overflow-hidden">
       {/* Logo container */}
-      <div className="absolute inset-0 z-10 flex items-center px-8">
+      <div className="absolute inset-0 z-10 flex items-center justify-between px-8">
         <Image
           src="/logo/logo.png"
           alt="Logo"
@@ -13,6 +13,16 @@ export default function Header() {
           className="object-contain"
           priority
         />
+        
+        {/* Navigation */}
+        <nav className="flex gap-8 items-center">
+          <a href="#" className="text-black font-semibold hover:text-gray-600 transition-colors">
+            ENTERPRISE
+          </a>
+          <a href="#" className="text-black font-semibold hover:text-gray-600 transition-colors">
+            INDUSTRIES
+          </a>
+        </nav>
       </div>
       
       {/* Angled gradient overlay on the right */}
